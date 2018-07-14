@@ -1,0 +1,146 @@
+body {
+	margin: 0%;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 16px;
+
+}
+
+section p, li {
+	margin: 8px;
+	line-height: 1.5;
+}
+
+a {
+	color: magenta;
+	text-decoration: none;
+}
+
+ol {
+	padding: 0;
+	list-style-type: none;
+}
+ul	{
+	padding: 5px;
+	list-style-type: none;
+
+}
+
+nav {
+	background-color: cyan;
+	color: magenta;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#navbar ul {
+	padding: 0px 40px;
+}
+
+#welcome {
+	background-image: url(we-are-better-than-this.jpg);
+/*	background-image: url(we-the-people-vote.jpg);
+*/	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 100vh;
+}
+
+#welcome h1 {
+	position: absolute;
+	top: 50vh;
+	left: 45%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	color: magenta;
+	font-size: 60px;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.3),
+				0px 8px 13px rgba(0,0,0,0.4),
+				0px 18px 23px rgba(0,0,0,0.3);
+}
+
+h1 span {
+	font-size: 110px;
+}
+
+h2	{
+	color: magenta;
+	margin: 8px;
+	line-height: 1.25;
+	font-size: 40px;
+}
+
+hr {
+	width: 200px;
+	border-top: 2px solid magenta;
+	border-bottom: 2px solid rgba(255,0,255,0.2)
+}
+
+.steps {
+	color: magenta;
+	font-size:110px;
+	line-height: 1;
+}
+
+.smoal {
+	font-size: 13px;
+}
+
+.question {
+	color: magenta;
+	font-weight: 500;
+}
+
+footer {
+	background-color: cyan;
+}
+
+footer h2, p {
+	margin: 5px;
+	line-height: 1.5;
+}
+
+.form-container {
+	width: 300px;
+	margin: 0 auto;
+	padding: 15px 5px;
+}
+
+form {
+	color: magenta;
+	font-weight: 500;
+}
+
+fieldset {
+	padding: 0;
+	border: 0;
+}
+label, input {
+	margin: 5px 0px;
+}
+
+.input-field {
+	height: 24px;
+	width: 275px;
+	border-radius: 6px;
+}
+
+.comment-field {
+	height: 125px;
+	width: 275px;
+	border-radius: 6px;
+	padding-top: 5px;
+}
+
+#submit {
+	font-size: 15px;
+	background-color: magenta;
+	color: white;
+	border-radius: 6px;
+	padding: 3px 24px;
+}
+
