@@ -1,18 +1,42 @@
 body {
 	margin: 0%;
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 16px;
-
+	font-size: 20px;
 }
 
 section p, li {
 	margin: 8px;
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 a {
 	color: magenta;
 	text-decoration: none;
+	font-weight: 500;
+}
+
+a:hover {
+	color: #ffff00;
+}
+
+#nav-header {
+	background: cyan;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+#logo {
+	margin: 20px 5px 20px 10px;
+	padding-top: 20px;
+	float: left;
+	width: 180px;
+	height: 40px;
+	background: url(vote.png) no-repeat center;
+	display: block;
 }
 
 ol {
@@ -20,58 +44,80 @@ ol {
 	list-style-type: none;
 }
 ul	{
-	padding: 5px;
 	list-style-type: none;
 
 }
 
 nav {
-	background-color: cyan;
-	color: magenta;
+	float: right;
+	padding: 20px;
 }
 
-.container {
-	display: flex;
-	justify-content: space-between;
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: magenta url(menu-icon.png) center;
 }
 
-#navbar ul {
-	padding: 0px 40px;
+a:hover#menu-icon {
+	background-color: purple;
+	border-radius: 4px 4px 0 0;
+}
+
+.nav-menu {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+
+li {
+	display: inline-block;
+}
+
+#content-padding {
+	padding-top: 100px;
+}
+
+#main-content	{
+	margin: 10px auto;
+	max-width: 980px;
+	position: relative;
+	padding: 10px;
 }
 
 #welcome {
 	background-image: url(we-are-better-than-this.jpg);
-/*	background-image: url(we-the-people-vote.jpg);
-*/	background-size: cover;
+	background-size: cover;
 	background-position: center center;
 	width: 100%;
-	height: 100vh;
+	height: 90vh; 
 }
 
 #welcome h1 {
 	position: absolute;
-	top: 50vh;
-	left: 45%;
+	top: 30vh;
+	left: 70%;
 	transform: translate(-50%, -50%);
 }
 
 h1 {
 	color: magenta;
-	font-size: 60px;
-	text-shadow: 0px 4px 3px rgba(0,0,0,0.3),
-				0px 8px 13px rgba(0,0,0,0.4),
-				0px 18px 23px rgba(0,0,0,0.3);
+	font-size: 70px;
+	text-shadow: -2px -2px 4px #897689;
+	width: 90%
 }
 
 h1 span {
-	font-size: 110px;
+	font-size: 140px;
 }
 
 h2	{
 	color: magenta;
 	margin: 8px;
 	line-height: 1.25;
-	font-size: 40px;
+	font-size: 90px;
+	text-shadow: -2px -2px 2px #ffc4ff;
 }
 
 hr {
@@ -82,12 +128,13 @@ hr {
 
 .steps {
 	color: magenta;
-	font-size:110px;
+	font-size:90px;
 	line-height: 1;
+	text-shadow: -2px -2px 2px #ffc4ff;
 }
 
 .smoal {
-	font-size: 13px;
+	font-size: 14px;
 }
 
 .question {
@@ -99,13 +146,20 @@ footer {
 	background-color: cyan;
 }
 
-footer h2, p {
+footer p {
 	margin: 5px;
-	line-height: 1.5;
+	text-align: center;
+}
+
+#footer {
+	max-width: 980px;
+	position: relative;
+	padding: 10px;
+	margin: 0 auto;
 }
 
 .form-container {
-	width: 300px;
+	width: 500px;
 	margin: 0 auto;
 	padding: 15px 5px;
 }
@@ -127,13 +181,17 @@ label, input {
 	height: 24px;
 	width: 275px;
 	border-radius: 6px;
+	padding-left: 5px;
+	font-size: 14px;
 }
 
 .comment-field {
 	height: 125px;
-	width: 275px;
+	width: 400px;
 	border-radius: 6px;
 	padding-top: 5px;
+	padding-left: 5px;
+	font-size: 14px;
 }
 
 #submit {
@@ -143,4 +201,62 @@ label, input {
 	border-radius: 6px;
 	padding: 3px 24px;
 }
+
+@media only screen and (max-width: 925px) {
+	#welcome h1 {
+		position: absolute;
+		top: 30vh;
+		left: 50%;	
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+
+	#menu-icon {
+		display: inline-block;
+	}
+
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: white;
+		border: 5px solid magenta;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	nav:hover ul {
+		display: block;
+	}
+
+	#welcome h1 {
+		top: 35vh;
+		left: 55%;
+	}
+
+	h1 span {
+		font-size: 100px;
+	}
+
+	h2	{
+		margin: 8px;
+		line-height: 1.25;
+		font-size: 70px;
+		text-shadow: -2px -2px 2px #ffc4ff;
+	}
+}
+
 
