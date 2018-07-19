@@ -31,7 +31,7 @@ a:hover {
 
 #logo {
 	margin: 20px 5px 20px 10px;
-	padding-top: 20px;
+	padding-top: 30px;
 	float: left;
 	width: 180px;
 	height: 40px;
@@ -45,12 +45,11 @@ ol {
 }
 ul	{
 	list-style-type: none;
-
 }
 
 nav {
 	float: right;
-	padding: 20px;
+	padding: 10px;
 }
 
 #menu-icon {
@@ -73,10 +72,6 @@ a:hover#menu-icon {
 
 li {
 	display: inline-block;
-}
-
-#content-padding {
-	padding-top: 100px;
 }
 
 #main-content	{
@@ -120,10 +115,15 @@ h2	{
 	text-shadow: -2px -2px 2px #ffc4ff;
 }
 
-hr {
-	width: 200px;
-	border-top: 2px solid magenta;
-	border-bottom: 2px solid rgba(255,0,255,0.2)
+h3 {
+	color: magenta;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: -2px -2px 2px #ffc4ff;
+}
+
+.nav-padding {
+	padding-top: 100px;
 }
 
 .steps {
@@ -158,48 +158,14 @@ footer p {
 	margin: 0 auto;
 }
 
-.form-container {
-	width: 500px;
-	margin: 0 auto;
-	padding: 15px 5px;
+#share-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
-form {
-	color: magenta;
-	font-weight: 500;
-}
-
-fieldset {
-	padding: 0;
-	border: 0;
-}
-label, input {
-	margin: 5px 0px;
-}
-
-.input-field {
-	height: 24px;
-	width: 275px;
-	border-radius: 6px;
-	padding-left: 5px;
-	font-size: 14px;
-}
-
-.comment-field {
-	height: 125px;
-	width: 400px;
-	border-radius: 6px;
-	padding-top: 5px;
-	padding-left: 5px;
-	font-size: 14px;
-}
-
-#submit {
-	font-size: 15px;
-	background-color: magenta;
-	color: white;
-	border-radius: 6px;
-	padding: 3px 24px;
+.share-cell {
+	padding: 20px;
 }
 
 @media only screen and (max-width: 925px) {
@@ -212,11 +178,15 @@ label, input {
 
 @media only screen and (max-width: 768px) {
 	body {
-		font-size: 16px;
+		font-size: 17px;
 	}
 
 	#menu-icon {
 		display: inline-block;
+	}
+
+	nav {
+		padding: 30px 10px;
 	}
 
 	nav ul, nav:active ul {
